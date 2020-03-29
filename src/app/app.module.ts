@@ -19,6 +19,8 @@ import { ProductComponent } from './pages/product/product.component';
 import { HospitalComponent } from './pages/hospital/hospital.component';
 import { NeedComponent } from './pages/need/need.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductlistComponent } from './pages/productlist/productlist.component';
+import { ProductinfoComponent } from './pages/productinfo/productinfo.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,9 @@ import { HttpClientModule } from '@angular/common/http';
     SubmitComponent,
     ProductComponent,
     HospitalComponent,
-    NeedComponent
+    NeedComponent,
+    ProductlistComponent,
+    ProductinfoComponent
   ],
   imports: [
     BrowserModule,
