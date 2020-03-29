@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Supplier } from 'src/app/models/supplier';
+import { SupplierService } from 'src/app/services/supplier.service';
 
 @Component({
   selector: 'app-submit',
@@ -8,11 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubmitComponent implements OnInit {
 
-  public name = "";
+  public supplier: Supplier = { id: null, name: '', address: '', contactInfo: '', description: ''};
 
-  constructor() { }
+  constructor(private supplierService: SupplierService) {
+  }
 
   ngOnInit(): void {
+  }
+
+  submit() {
+    console.log(this.supplierService.addSupplier(this.supplier));
   }
 
 }

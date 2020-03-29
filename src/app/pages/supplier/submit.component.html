@@ -2,23 +2,23 @@
 <div class="name">
     <h1>Welcome Suppliers!</h1>
     <h2>Enter Your Information.</h2>
-    <h2>{{name}}</h2>
+    <h2>{{supplier?.name}}</h2>
     <mat-form-field appearance="fill">
         <mat-label>Company Name</mat-label>
-        <input matInput #nameFiled="ngModel" [(ngModel)]="name">
+        <input matInput #nameField="ngModel" [(ngModel)]="supplier.name">
     </mat-form-field>
 </div>
 <div class="address">
     <mat-form-field appearance="fill">
         <mat-label>Address</mat-label>
-        <input matInput>
+        <input matInput #addressField="ngModel" [(ngModel)]="supplier.address">
     </mat-form-field>
 
     <div class="email">
         <h2>Primary Contact Information</h2>
         <mat-form-field appearance="fill">
             <mat-label>Email Address</mat-label>
-            <input matInput>
+            <input matInput #contactInfoFiled="ngModel" [(ngModel)]="supplier.contactInfo">
         </mat-form-field>
     </div>
     <div class="phone">
@@ -27,6 +27,6 @@
             <input matInput>
         </mat-form-field>
     </div>
-    <button mat-stroked-button>Submit</button>
+    <button mat-stroked-button (click)="submit()">Submit</button>
     <h3>You will be directed to a page to enter information about each type of PPE product.</h3>
 </div>
