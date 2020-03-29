@@ -29,7 +29,8 @@
     </mat-form-field>  
 </div>
 <input type="file" (change)="onFileSelected($event)">
-<button type ="button" (click)= "onUpload()">Upload Picture</button>
-
-<h4>Supported File Types: .jpg, .png, .pdf</h4>
+<button mat-stroked-button type ="mat-stroked-button" (click)= "onUpload()">Upload Picture</button>
+<div class = "submit">
+<button mat-stroked-button>Submit</button>
+</div>
 </div>

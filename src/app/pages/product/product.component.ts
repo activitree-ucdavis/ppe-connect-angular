@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProductComponent implements OnInit {
   selectedFile = null;
+
   constructor(private http:HttpClient) { }
 
   ngOnInit(): void {
