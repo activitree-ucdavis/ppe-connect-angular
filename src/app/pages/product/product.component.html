@@ -1,18 +1,4 @@
-<head>
-    <style>
-        body
-        {
-            margin: 60px;
-            line-height: 60px;
-            text-align: center;
-        }
-        .button
-        {
-            border: 1px solid lightskyblue;
-        }
-    </style>
-</head>
-<body>
+<div class="container">
 <div class="Suppliers">
     <h1>Enter the information for each PPE product.</h1>
     <h2>If there are multiple types of products, click submit after each entry to store data, then enter information for the new product.</h2>
@@ -42,6 +28,8 @@
         <input matInput>
     </mat-form-field>  
 </div>
-<button mat-stroked-button>Upload Picture</button>
+<input type="file" (change)="onFileSelected($event)">
+<button type ="button" (click)= "onUpload()">Upload Picture</button>
+
 <h4>Supported File Types: .jpg, .png, .pdf</h4>
-</body>
+</div>

@@ -1,19 +1,4 @@
-<head>
-    <style>
-        body
-        {
-            margin: 60px;
-            line-height: 60px;
-            text-align: center;
-        }
-        .button
-        {
-            border: 1px solid lightskyblue;
-        }
-    </style>
-</head>
-<body>
-
+<div class="container">
 <div class="Suppliers">
     <h1>Welcome Suppliers!</h1>
     <h2>Enter Your Information.</h2>
@@ -28,18 +13,19 @@
         <input matInput>
     </mat-form-field>
 
-<div class="Suppliers">
-    <h2>Primary Contact Information</h2>
-    <mat-form-field appearance="fill">
-        <mat-label>Email Address</mat-label>
-        <input matInput>
-    </mat-form-field>
+    <div class="Suppliers">
+        <h2>Primary Contact Information</h2>
+        <mat-form-field appearance="fill">
+            <mat-label>Email Address</mat-label>
+            <input matInput>
+        </mat-form-field>
+    </div>
+    <div class="Suppliers">
+        <mat-form-field appearance="fill">
+            <mat-label>Phone Number</mat-label>
+            <input matInput>
+        </mat-form-field>
+    </div>
+    <button mat-stroked-button>Submit</button>
+    <h3>You will be directed to a page to enter information about each type of PPE product.</h3>
 </div>
-<div class="Suppliers">
-    <mat-form-field appearance="fill">
-        <mat-label>Phone Number</mat-label>
-        <input matInput>
-    </mat-form-field>
-</div>
-<button mat-stroked-button>Submit</button>
-<h3>You will be directed to a page to enter information about each type of PPE product.</h3>

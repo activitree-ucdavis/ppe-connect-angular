@@ -1,39 +1,27 @@
-<head>
-    <style>
-        body
-        {
-            margin: 60px;
-            line-height: 60px;
-            text-align: center;
-        }
-        .button
-        {
-            border: 1px solid lightskyblue;
-        }
-    </style>
-</head>
-<body>
-<div class="Suppliers">
-    <h1>Enter each PPE product and quantity needed.</h1>
-    <h2>If multiple types of products are needed, click submit after each entry to store data, then enter information for the new product.</h2>
-    <mat-form-field appearance="fill">
-        <mat-label>PPE Name</mat-label>
-        <input matInput>
-    </mat-form-field>
+<div class="container">
+    <div class="Suppliers">
+        <h1>Enter each PPE product and quantity needed.</h1>
+        <h2>If multiple types of products are needed, click submit after each entry to store data, then enter
+            information for the new product.</h2>
+        <mat-form-field appearance="fill">
+            <mat-label>PPE Name</mat-label>
+            <input matInput>
+        </mat-form-field>
+    </div>
+    <div class="Suppliers">
+
+        <mat-form-field appearance="fill">
+            <mat-label>PPE Description</mat-label>
+            <input matInput>
+        </mat-form-field>
+    </div>
+    <div class="Suppliers">
+
+        <mat-form-field appearance="fill">
+            <mat-label>Quantity Needed</mat-label>
+            <input matInput>
+        </mat-form-field>
+        
+    </div>
+    <button mat-stroked-button>Submit</button>
 </div>
-<div class="Suppliers">
-    
-    <mat-form-field appearance="fill">
-        <mat-label>PPE Description</mat-label>
-        <input matInput>
-    </mat-form-field>
-</div>
-<div class="Suppliers">
-    
-    <mat-form-field appearance="fill">
-        <mat-label>Quantity Needed</mat-label>
-        <input matInput>
-    </mat-form-field>
-</div>
-<button mat-stroked-button>Submit</button>
-</body>

@@ -17,7 +17,7 @@ import { SubmitComponent } from './pages/supplier/submit.component';
 import { ProductComponent } from './pages/product/product.component';
 import { HospitalComponent } from './pages/hospital/hospital.component';
 import { NeedComponent } from './pages/need/need.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +36,8 @@ import { NeedComponent } from './pages/need/need.component';
     MatToolbarModule,
     MatIconModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
