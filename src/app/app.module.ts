@@ -21,6 +21,7 @@ import { NeedComponent } from './pages/need/need.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductlistComponent } from './pages/productlist/productlist.component';
 import { ProductinfoComponent } from './pages/productinfo/productinfo.component';
+import { WelcomeComponent } from './pages/welcome/welcome.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,8 @@ import { ProductinfoComponent } from './pages/productinfo/productinfo.component'
     HospitalComponent,
     NeedComponent,
     ProductlistComponent,
-    ProductinfoComponent
+    ProductinfoComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
