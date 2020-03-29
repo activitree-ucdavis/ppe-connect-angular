@@ -13,14 +13,20 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 
-import { SubmitComponent } from './pages/submit/submit.component';
+import { SubmitComponent } from './pages/supplier/submit.component';
+import { ProductComponent } from './pages/product/product.component';
+import { HospitalComponent } from './pages/hospital/hospital.component';
+import { NeedComponent } from './pages/need/need.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    SubmitComponent
+    SubmitComponent,
+    ProductComponent,
+    HospitalComponent,
+    NeedComponent
   ],
   imports: [
     BrowserModule,
