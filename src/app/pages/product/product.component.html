@@ -1,42 +1,35 @@
 <div class="container">
-<div class="Suppliers">
-    <h1>Enter the information for each PPE product.</h1>
-    <h2>If there are multiple types of products, click submit after each entry to store data, then enter information for the new product.</h2>
-    <mat-form-field appearance="fill">
-        <mat-label>PPE Title</mat-label>
-        <input matInput>
-    </mat-form-field>
-</div>
-<div class="Suppliers">
-<mat-form-field appearance="fill">
-    <mat-label>PPE Type</mat-label>
-    <input matInput>
-</mat-form-field>
-</div>
-<div class="Suppliers">
-    
-    <mat-form-field appearance="fill">
-        <mat-label>PPE Description</mat-label>
-        <input matInput>
-    </mat-form-field>
-</div>
-<div class="Suppliers">
-    
-    <mat-form-field appearance="fill">
-        <mat-label>PPE ID</mat-label>
-        <input matInput>
-    </mat-form-field>
-</div>
-<div class="Suppliers">
-    <mat-form-field appearance="fill">
-        <mat-label>PPE Price per Unit</mat-label>
-    <span matPrefix>$&nbsp;</span>
-        <input matInput>
-    </mat-form-field>  
-</div>
-<input type="file" (change)="onFileSelected($event)">
-<button mat-stroked-button type ="mat-stroked-button" (click)= "onUpload()">Upload Picture</button>
-<div class = "submit">
-<button mat-stroked-button (click)="submit()">Submit</button>
-</div>
+    <div>
+        <h1>Enter the information for each PPE product.</h1>
+        <h2>If there are multiple types of products, click submit after each entry to store data, then enter information
+            for the new product.</h2>
+        <mat-form-field appearance="fill">
+            <mat-label>Title</mat-label>
+            <input matInput #titleField="ngModel" [(ngModel)]="product.title">
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field appearance="fill">
+            <mat-label>Type</mat-label>
+            <input matInput #typeField="ngModel" [(ngModel)]="product.type">
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field appearance="fill">
+            <mat-label>Description</mat-label>
+            <input matInput #descField="ngModel" [(ngModel)]="product.description">
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field appearance="fill">
+            <mat-label>Unit Price</mat-label>
+            <span matPrefix>$&nbsp;</span>
+            <input matInput #priceField="ngModel" [(ngModel)]="product.price" type="number">
+        </mat-form-field>
+    </div>
+    <input type="file" (change)="onFileSelected($event)">
+    <button mat-stroked-button type="mat-stroked-button" (click)="onUpload()">Upload Picture</button>
+    <div class="submit">
+        <button mat-stroked-button (click)="submit()">Submit</button>
+    </div>
 </div>
