@@ -1,0 +1,29 @@
+.header
+{
+    margin: 30px;
+    line-height: 10px;
+    text-align: center;
+}
+.ppe
+{
+    text-align: left;
+    margin: 30px;
+    border-radius: 25px;
+    line-height: 5px;
+    background-color: white;    
+    color: black;
+    border: 3px solid darkblue;
+    padding: 30px;
+    //width: 1000px;
+    //height: 200px;
+    button
+    {
+    margin-top: -4%;
+    float: right;
+    background-color: darkblue;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 24px;
+    cursor: pointer;
+}
+}
