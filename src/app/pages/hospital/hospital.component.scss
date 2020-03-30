@@ -4,7 +4,11 @@
             line-height: 60px;
             text-align: center;
         }
-        .button
+        button
         {
             border: 1px solid lightskyblue;
+            
         }
+        mat-form-field {
+            width: 70%;
+            }
