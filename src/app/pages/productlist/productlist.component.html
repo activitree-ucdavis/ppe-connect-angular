@@ -1,13 +1,13 @@
 <div class="container">
     <div class="header">
- 
-    <h1>PPE Available</h1>
-</div>
-    <div class="ppe">
-        <h2>Title</h2>
-        <h2>Type</h2>
-        <h3>Image</h3>
-        <h3>Address</h3>
-        <button mat-stroked-button>More Details</button>
+        <h1>PPE Available</h1>
+    </div>
+    <div *ngFor="let product of products">
+        <div class="ppe">
+            <h2>{{product.title}}</h2>
+            <h2>{{product.type}}</h2>
+            <h3>{{product.description}}</h3>
+            <button mat-stroked-button routerLink="/product/{{product.id}}">More Details</button>
+        </div>
     </div>
 </div>
