@@ -1,60 +1,72 @@
 <div class="container">
-<div class="Suppliers">
-    <h1>Welcome Hospitals!</h1>
-    <h2>Enter Your Information.</h2>
-    <mat-form-field appearance="fill">
-        <mat-label>Hospital Name</mat-label>
-        <input matInput>
-    </mat-form-field>
-</div>
-<div class="Suppliers">
-    <mat-form-field appearance="fill">
-        <mat-label>Address Line 1</mat-label>
-        <input matInput>
-    </mat-form-field></div>
     <div class="Suppliers">
+        <h1>Welcome Hospitals!</h1>
+        <h2>Enter Your Information.</h2>
+        <h2>{{hospital?.name}}</h2>
         <mat-form-field appearance="fill">
-            <mat-label>Address Line 2</mat-label>
-            <input matInput>
-        </mat-form-field></div>
-        <div class="Suppliers">
-            <mat-form-field appearance="fill">
-                <mat-label>City</mat-label>
-                <input matInput>
-            </mat-form-field></div>
-            <div class="Suppliers">
-                <mat-form-field appearance="fill">
-                    <mat-label>State</mat-label>
-                    <input matInput>
-                </mat-form-field></div>
-                <div class="Suppliers">
-                    <mat-form-field appearance="fill">
-                        <mat-label>Country</mat-label>
-                        <input matInput>
-                    </mat-form-field></div>
-                    <div class="Suppliers">
-                        <mat-form-field appearance="fill">
-                            <mat-label>State</mat-label>
-                            <input matInput>
-                        </mat-form-field></div>
-<div class="Suppliers">
-    <h2>Primary Contact Information</h2>
-    <mat-form-field appearance="fill">
-        <mat-label>Email Address</mat-label>
-        <input matInput>
-    </mat-form-field>
-</div>
-<div class="Suppliers">
-    <mat-form-field appearance="fill">
-        <mat-label>Phone Number</mat-label>
-        <input matInput>
-    </mat-form-field>
-    <div class="Suppliers">
-        <mat-form-field appearance="fill">
-            <mat-label>Hospital Website</mat-label>
+            <mat-label>Hospital Name</mat-label>
+            <input matInput #nameField="ngModel" [(ngModel)]="hospital.name">
             <input matInput>
         </mat-form-field>
-</div>
-<button mat-stroked-button>Submit</button>
-<h3>You will be directed to a page to enter type of PPE required and quantity.</h3>
-</div>
+    </div>
+        <mat-form-field appearance="fill">
+            <mat-label>Address Line 1</mat-label>
+            <input matInput #addr1Field="ngModel" [(ngModel)]="hospital.address.line1">
+            <input matInput>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Address Line 2</mat-label>
+            <input matInput #addr2Field="ngModel" [(ngModel)]="hospital.address.line2">
+            <input matInput>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>City</mat-label>
+            <input matInput #cityField="ngModel" [(ngModel)]="hospital.address.city">
+            <input matInput>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>State</mat-label>
+            <input matInput #stateField="ngModel" [(ngModel)]="hospital.address.state">
+            <input matInput>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Zip Code</mat-label>
+            <input matInput #zipcodeField="ngModel" [(ngModel)]="hospital.address.zipcode">
+            <input matInput>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Country</mat-label>
+            <input matInput #zipcodeField="ngModel" [(ngModel)]="hospital.address.country">
+            <input matInput>
+        </mat-form-field>
+
+
+    <div class="Suppliers">
+        <h2>Primary Contact Information</h2>
+        <mat-form-field appearance="fill">
+            <mat-label>Email Address</mat-label>
+            <input matInput #emailFiled="ngModel" [(ngModel)]="hospital.contactInfo.email">
+            <input matInput>
+        </mat-form-field>
+    </div>
+    <div class="Suppliers">
+        <mat-form-field appearance="fill">
+            <mat-label>Phone Number</mat-label>
+            <input matInput #telField="ngModel" [(ngModel)]="hospital.contactInfo.tel">
+            <input matInput>
+        </mat-form-field>
+        <div class="Suppliers">
+            <mat-form-field appearance="fill">
+                <mat-label>Hospital Website</mat-label>
+                <input matInput #websiteField="ngModel" [(ngModel)]="hospital.contactInfo.website">
+                <input matInput>
+            </mat-form-field>
+        </div>
+        <button mat-stroked-button (click)="submit()">Submit</button>
+        <h3>You will be directed to a page to enter type of PPE required and quantity.</h3>
+    </div>
