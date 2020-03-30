@@ -31,6 +31,6 @@
 <input type="file" (change)="onFileSelected($event)">
 <button mat-stroked-button type ="mat-stroked-button" (click)= "onUpload()">Upload Picture</button>
 <div class = "submit">
-<button mat-stroked-button>Submit</button>
+<button mat-stroked-button (click)="submit()">Submit</button>
 </div>
 </div>

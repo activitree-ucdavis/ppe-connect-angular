@@ -1,0 +1,1 @@
+export const ApiBaseUrl = "https://hack-covid19.appspot.com/api/";
