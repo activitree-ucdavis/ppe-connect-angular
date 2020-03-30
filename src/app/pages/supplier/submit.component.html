@@ -8,37 +8,39 @@
             <input matInput #nameField="ngModel" [(ngModel)]="supplier.name">
         </mat-form-field>
     </div>
- 
-        <mat-form-field appearance="fill">
-            <mat-label>Address Line 1</mat-label>
-            <input matInput #addr1Field="ngModel" [(ngModel)]="supplier.address.line1">
-        </mat-form-field>
- 
-   
-        <mat-form-field appearance="fill">
-            <mat-label>Address Line 2</mat-label>
-            <input matInput #addr2Field="ngModel" [(ngModel)]="supplier.address.line2">
-        </mat-form-field>
 
-        <mat-form-field appearance="fill">
+    <mat-form-field appearance="fill">
+        <mat-label>Address Line 1</mat-label>
+        <input matInput #addr1Field="ngModel" [(ngModel)]="supplier.address.line1">
+    </mat-form-field>
+
+
+    <mat-form-field appearance="fill">
+        <mat-label>Address Line 2</mat-label>
+        <input matInput #addr2Field="ngModel" [(ngModel)]="supplier.address.line2">
+    </mat-form-field>
+
+    <div fxLayout="row" fxLayoutAlign="center space-between">
+        <mat-form-field appearance="fill" style="width: 272px">
             <mat-label>City</mat-label>
             <input matInput #cityField="ngModel" [(ngModel)]="supplier.address.city">
         </mat-form-field>
 
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="fill" style="width: 272px">
             <mat-label>State</mat-label>
             <input matInput #stateField="ngModel" [(ngModel)]="supplier.address.state">
         </mat-form-field>
- 
-        <mat-form-field appearance="fill">
+
+        <mat-form-field appearance="fill" style="width: 256px">
             <mat-label>Zipcode</mat-label>
             <input matInput #zipcodeField="ngModel" [(ngModel)]="supplier.address.zipcode">
         </mat-form-field>
+    </div>
 
-        <mat-form-field appearance="fill">
-            <mat-label>Country</mat-label>
-            <input matInput #countryField="ngModel" [(ngModel)]="supplier.address.country">
-        </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Country</mat-label>
+        <input matInput #countryField="ngModel" [(ngModel)]="supplier.address.country">
+    </mat-form-field>
 
 
     <div class="email">
