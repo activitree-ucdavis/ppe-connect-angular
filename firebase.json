@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "hackCOVID19-angular",
+      "public": "dist/hackCOVID19-angular",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

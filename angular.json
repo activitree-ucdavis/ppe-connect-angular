@@ -123,6 +123,10 @@
               "devServerTarget": "hackCOVID19-angular:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }

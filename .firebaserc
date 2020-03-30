@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "hack-covid19-fire": {
+      "hosting": {
+        "hackCOVID19-angular": [
+          "ppeconnect"
+        ]
+      }
+    }
+  }
+}
