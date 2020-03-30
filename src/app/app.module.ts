@@ -22,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductlistComponent } from './pages/productlist/productlist.component';
 import { ProductinfoComponent } from './pages/productinfo/productinfo.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
+import { HospitalpageComponent } from './pages/hospitalpage/hospitalpage.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { WelcomeComponent } from './pages/welcome/welcome.component';
     NeedComponent,
     ProductlistComponent,
     ProductinfoComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    HospitalpageComponent
   ],
   imports: [
     BrowserModule,
