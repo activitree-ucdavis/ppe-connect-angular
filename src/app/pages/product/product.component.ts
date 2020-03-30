@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Product } from 'src/app/models/product';
 import { ProductService } from 'src/app/services/product.service';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-product',
@@ -17,7 +18,12 @@ export class ProductComponent implements OnInit {
     type: ''
   }
 
-  constructor(private http: HttpClient, private productService: ProductService) { }
+  constructor(
+    private http: HttpClient, 
+    private productService: ProductService, 
+    private router: Router, 
+    private route: ActivatedRoute) 
+  { }
 
   ngOnInit(): void {
   }
@@ -33,6 +39,9 @@ export class ProductComponent implements OnInit {
 
   submit() {
     this.productService.createProduct(this.product)
-      .subscribe(product => console.log(product));
+      .subscribe(product => {
+        console.log(product);
+        this.router.navigate(['../productlist'], {relativeTo: this.route})
+      });
   }
 }
