@@ -10,7 +10,7 @@ import { SupplierService } from 'src/app/services/supplier.service';
 })
 export class SubmitComponent implements OnInit {
 
-  public supplier: Supplier = { id: null, name: '', address: '', contactInfo: '', description: ''};
+  public supplier: Supplier = { name: '', address: '', contactInfo: '', description: ''};
 
   constructor(private supplierService: SupplierService) {
   }
@@ -19,7 +19,8 @@ export class SubmitComponent implements OnInit {
   }
 
   submit() {
-    console.log(this.supplierService.addSupplier(this.supplier));
+    this.supplierService.createSupplier(this.supplier)
+      .subscribe(supplier => console.log(supplier));
   }
 
 }

@@ -8,6 +8,7 @@ import { Supplier } from '../models/supplier';
 })
 export class SupplierService {
 
+  //url = 'https://localhost:5001/api/Suppliers'
   url = 'https://hack-covid19.appspot.com/api/Suppliers';
 
   constructor(private http: HttpClient) { }
@@ -16,9 +17,7 @@ export class SupplierService {
     return this.http.get<Supplier[]>(this.url);
   }
 
-  addSupplier(supplier: Supplier) {
-    console.log("Start posting...");
-    
-    return this.http.post(this.url, supplier);
+  createSupplier(supplier: Supplier) : Observable<Supplier> {
+    return this.http.post<Supplier>(this.url, supplier);
   }
 }
