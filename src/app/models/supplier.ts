@@ -1,7 +1,10 @@
+import { Address } from './address';
+import { ContactInfo } from './contactInfo';
+
 export interface Supplier {
     id?: string;
     name: string;
-    address: string;
-    contactInfo: string;
+    address: Address;
+    contactInfo: ContactInfo;
     description: string;
 }

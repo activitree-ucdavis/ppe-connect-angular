@@ -10,7 +10,18 @@ import { SupplierService } from 'src/app/services/supplier.service';
 })
 export class SubmitComponent implements OnInit {
 
-  public supplier: Supplier = { name: '', address: '', contactInfo: '', description: ''};
+  public supplier: Supplier = { 
+    name: '', 
+    address: {
+      line1: '',
+      city: '',
+      state: '',
+      zipcode: '',
+      country: ''
+    }, 
+    contactInfo: {}, 
+    description: ''
+  };
 
   constructor(private supplierService: SupplierService) {
   }
